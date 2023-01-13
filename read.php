@@ -11,8 +11,8 @@ $options = [
 // Connect to database
 $pdo = new PDO($dsn, 'root', '', $options);
 
-// Select all people
-$people = $pdo->query('SELECT * FROM RichestPeople ORDER BY Networth DESC');
+// Select all cars
+$cars = $pdo->query('SELECT * FROM DureAuto ORDER BY Prijs DESC');
 
 ?>
 <!DOCTYPE html>
