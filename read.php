@@ -12,7 +12,7 @@ $options = [
 $pdo = new PDO($dsn, 'root', '', $options);
 
 // Select all cars
-$cars = $pdo->query('SELECT * FROM DureAuto ORDER BY Prijs DESC');
+$cars = $pdo->query('SELECT * FROM DureAuto ORDER BY CAST(Prijs AS int) DESC');
 
 ?>
 <!DOCTYPE html>
