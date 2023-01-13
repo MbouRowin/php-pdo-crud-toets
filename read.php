@@ -1,5 +1,7 @@
 <?php
 
+// INSERT INTO dureauto VALUES (NULL, 'Koenigsegg', 'CCXR Trevita', 401, '4000000');
+
 // https://stackoverflow.com/questions/30074492/what-is-the-difference-between-utf8mb4-and-utf8-charsets-in-mysql
 $dsn = 'mysql:host=localhost;dbname=php-pdo-crud-toets;charset=utf8mb4';
 
