@@ -38,20 +38,21 @@ $cars = $pdo->query('SELECT * FROM DureAuto ORDER BY Prijs DESC');
 </head>
 
 <body>
+    <h1>De vijf duurste auto's ter wereld</h1>
     <table>
         <tr>
-            <th>Naam</th>
-            <th>Vermogen</th>
-            <th>Leeftijd</th>
-            <th>Bedrijf</th>
+            <th>Merk</th>
+            <th>Model</th>
+            <th>Topsnelheid</th>
+            <th>Prijs</th>
             <th>Delete</th>
         </tr>
-        <?php while ($row = $people->fetch()) : ?>
+        <?php while ($row = $cars->fetch()) : ?>
             <tr>
-                <td><?= $row['Name'] ?></td>
-                <td><?= $row['Networth'] ?></td>
-                <td><?= $row['Age'] ?></td>
-                <td><?= $row['MyCompany'] ?></td>
+                <td><?= $row['Merk'] ?></td>
+                <td><?= $row['Model'] ?></td>
+                <td><?= $row['Topsnelheid'] ?></td>
+                <td><?= $row['Prijs'] ?></td>
                 <td>
                     <a href="delete.php?id=<?= $row['Id'] ?>">
                         <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="red" class="bi bi-x" viewBox="0 0 16 16">
